@@ -24,14 +24,17 @@ In your code:
 
 ## Features
 
-We provide two protocols, and two functions:
+We provide two protocols (with one function each)
 
 * curable      (treat!   this)
 * diagnosable  (healthy? this)
+
+and two additional functions
+
 * attend!
 * discharge!
 
-... respectively
+... respectively.
 
 This library is intended to act on a patient (object), who at the bare minimum:
 
