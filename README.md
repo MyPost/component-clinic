@@ -3,7 +3,8 @@ Component-Clinic
 
 [![Travis Status](https://travis-ci.org/MyPost/component-clinic.svg)](https://travis-ci.org/MyPost/component-clinic)
 
-[![Boo-Boo Bot by Jenn and Tony Bot, on Flickr](https://farm4.staticflickr.com/3641/3661635778_a7793d730c_q.jpg)
+[![Boo-Boo Bot by Jenn and Tony Bot, on Flickr
+	](https://farm4.staticflickr.com/3641/3661635778_a7793d730c_q.jpg)
    ](https://www.flickr.com/photos/ittybittiesforyou/3661635778)
 
 ## PSA: Your components may be sick!
@@ -13,7 +14,8 @@ Make sure they are having regular checkups at the component-clinic!
 * A small helper library to allow components to be made healthy.
 * Useful for treating components that may become diseased on-the-fly.
 * Initialize sickly components to facilitate crash-driven development.
-* Works well with Stuart Sierra components, but doesn't depend on them.
+* Works well with [Stuart Sierra components](https://github.com/stuartsierra/component),
+  but doesn't depend on them.
 
 ## Usage
 
@@ -34,15 +36,15 @@ We provide two protocols (with one function each)
 
 and two additional functions
 
-* attend!
-* discharge!
+* (attend!    this options*)
+* (discharge! this)
 
 ... respectively.
 
 This library is intended to act on a patient (object), who at the bare minimum:
 
 * Implements curable
-* Is at some-point declared under care through the use of 'attend
+* Is at some-point declared under care through the use of 'attend!
 
 If you do this, then your patient will be checked periodically
 (defaulting to 10 :seconds) to see if they are healthy (defaulting to sick)
@@ -54,7 +56,7 @@ the diagnosable protocol (with its 'healthy? method) in order to
 test well-being. A falsy response will indicate that the patient is sick.
 
 The interval of diagnosis repetition is provided as an option
-to 'attend as :checkup-interval. If this option is missing, then
+to 'attend! as :checkup-interval. If this option is missing, then
 the same key of your patient will be used.
 Finally, if that key is missing too, then the interval will default to
 10 seconds. Intervals are indicated either with milliseconds,
@@ -108,3 +110,24 @@ Example:
 				map->Unstable
 				component/start
 				swait)
+
+## Options
+
+The 'attend! function accepts either just the component, or the component and some options.
+
+The default options are below:
+
+		{ :skip-initial-checkup? false
+			:checkup-interval      [10 :seconds]
+		}
+
+## Crash Driven Development
+
+In complex systems, if your initialization becomes your recovery, then you can
+start you system in a crashed state, and let them recover. This has the advantage
+of only requiring a piece of code for recovery, and no extra initialization
+routine required.
+
+Component-clinic helps facilitate this by allowing your component/Lifecycle
+implementation to be kept absolutely minimal, and then allowing your curable
+implementation to handle initialisation for you through recovery.
