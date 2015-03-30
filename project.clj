@@ -17,6 +17,7 @@
 
   :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost"
                                   :username "sordina"
-                                  :password :env}}
+                                  :password :env
+                                  :sign-releases false }}
 
   :profiles {:test {:dependencies [[com.stuartsierra/component "0.2.1"]]}})
