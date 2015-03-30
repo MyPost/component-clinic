@@ -1,13 +1,11 @@
-# Component-Clinic
-
-Look after the health of your components at the component-clinic!
-
-
 Component-Clinic
 ================
 
-PSA: Your components may be sick!
-		 Make sure they are having regular checkups at the component-clinic!
+PSA:
+
+Your components may be sick!
+
+Make sure they are having regular checkups at the component-clinic!
 
 > A small helper library to allow components to be made healthy.
 
