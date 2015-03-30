@@ -131,3 +131,9 @@ routine required.
 Component-clinic helps facilitate this by allowing your component/Lifecycle
 implementation to be kept absolutely minimal, and then allowing your curable
 implementation to handle initialisation for you through recovery.
+
+## Contributing
+
+If you wish to contribute to this codebase, you can fork and send a pull-request.
+
+The project is built using travis-ci and git tags are released to clojars.

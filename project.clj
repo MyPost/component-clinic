@@ -11,4 +11,11 @@
                  [com.taoensso/timbre "3.1.6"]
                  ]
 
+  :plugins [[org.clojars.cvillecsteele/lein-git-version "1.0.0"]]
+
+
+  :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost"
+                                  :username "sordina"
+                                  :password :env}}
+
   :profiles {:test {:dependencies [[com.stuartsierra/component "0.2.1"]]}})
