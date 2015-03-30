@@ -3,22 +3,14 @@ Component-Clinic
 
 [![Travis Status](https://travis-ci.org/MyPost/component-clinic.svg)](https://travis-ci.org/MyPost/component-clinic)
 
-PSA:
-
-Your components may be sick!
+## PSA: Your components may be sick!
 
 Make sure they are having regular checkups at the component-clinic!
 
-		A small helper library to allow components to be made healthy.
-
-
-		Useful for treating components that may become diseased on-the-fly.
-
-
-		Initialize sickly components to facilitate crash-driven development.
-
-
-		Works well with Stuart Sierra components, but doesn't depend on them.
+* A small helper library to allow components to be made healthy.
+* Useful for treating components that may become diseased on-the-fly.
+* Initialize sickly components to facilitate crash-driven development.
+* Works well with Stuart Sierra components, but doesn't depend on them.
 
 ## Usage
 
