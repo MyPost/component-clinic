@@ -11,9 +11,9 @@
                  [com.taoensso/timbre "3.1.6"]
                  ]
 
-  :plugins [[org.clojars.cvillecsteele/lein-git-version "1.0.0"]]
+  :plugins [[org.clojars.cvillecsteele/lein-git-version "1.0.1"]]
 
-  :git-version-path "src/component_clinict"
+  :git-version-path "src/component_clinic"
 
   :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost"
                                   :username "sordina"
