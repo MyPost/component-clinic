@@ -32,7 +32,6 @@
 (defn swait [this]
   (Thread/sleep (apply get-time [5 :seconds]))
   (component/stop this)
-  "finished"
   )
 
 (deftest cc-test
@@ -42,5 +41,5 @@
                      component/start
                      swait
                      )]
-      (is (= result "finished")))))
+      (is (> @(:health result) 3)))))
 
