@@ -13,6 +13,7 @@
 
   :plugins [[org.clojars.cvillecsteele/lein-git-version "1.0.0"]]
 
+  :git-version-path "src/component_clinict"
 
   :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost"
                                   :username "sordina"
