@@ -3,6 +3,9 @@ Component-Clinic
 
 [![Travis Status](https://travis-ci.org/MyPost/component-clinic.svg)](https://travis-ci.org/MyPost/component-clinic)
 
+[![Boo-Boo Bot by Jenn and Tony Bot, on Flickr](https://farm4.staticflickr.com/3641/3661635778_a7793d730c_s.jpg)
+   ](https://www.flickr.com/photos/ittybittiesforyou/3661635778)
+
 ## PSA: Your components may be sick!
 
 Make sure they are having regular checkups at the component-clinic!
