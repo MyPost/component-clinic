@@ -9,15 +9,28 @@ Your components may be sick!
 
 Make sure they are having regular checkups at the component-clinic!
 
-> A small helper library to allow components to be made healthy.
+		A small helper library to allow components to be made healthy.
 
-> Useful for treating components that may become diseased on-the-fly.
 
-> Initialize sickly components to facilitate crash-driven development.
+		Useful for treating components that may become diseased on-the-fly.
 
-> Works well with Stuart Sierra components, but doesn't depend on them.
 
----
+		Initialize sickly components to facilitate crash-driven development.
+
+
+		Works well with Stuart Sierra components, but doesn't depend on them.
+
+## Usage
+
+Leiningen:
+
+		:dependencies [[au.com.auspost/component-clinic "0.1.0-SNAPSHOT"]]
+
+In your code:
+
+		(require '[component-clinic.core :as cc])
+
+## Features
 
 We provide two protocols, and two functions:
 
