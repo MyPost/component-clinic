@@ -123,8 +123,8 @@ The default options are below:
 
 ## Crash Driven Development
 
-In complex systems, if your initialization becomes your recovery, then you can
-start you system in a crashed state, and let them recover. This has the advantage
+In complex systems, if initialization becomes recovery, then you can
+start your system in a crashed state, and let it recover. This has the advantage
 of only requiring a piece of code for recovery, and no extra initialization
 routine required.
 
