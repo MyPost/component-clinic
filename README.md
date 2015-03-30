@@ -1,6 +1,8 @@
 Component-Clinic
 ================
 
+[![Travis Status](https://travis-ci.org/MyPost/component-clinic.svg)](https://travis-ci.org/MyPost/component-clinic)
+
 PSA:
 
 Your components may be sick!
