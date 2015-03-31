@@ -132,6 +132,8 @@ Component-clinic helps facilitate this by allowing your component/Lifecycle
 implementation to be kept absolutely minimal, and then allowing your curable
 implementation to handle initialisation for you through recovery.
 
+See <https://www.usenix.org/conference/hotos-ix/crash-only-software>.
+
 ## Contributing
 
 If you wish to contribute to this codebase, you can fork and send a pull-request.
