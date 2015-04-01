@@ -1,7 +1,9 @@
 language: clojure
 lein: lein2
 before_script: lein2 git-version
-after_success: lein2 deploy clojars-https
+after_success:
+  - ls -al
+  - lein2 deploy clojars-https
 env:
   global:
     secure: "IwaBGTfcZek5U1SBg52VZOO4PV8B64/iH58TZWr5v+mKU5JnKtieY+Ia9B4w5RKqonhHgdft2o2eqVWTjWyYVmeQk6JvN/R1iRJRO9w/H5cKhEXTC2yOAURc6F+9UKTSn8v00s0HIgQ9z9+RmbbbJyh948dTpNuLYAKYTWt1QPM="
