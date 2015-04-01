@@ -1,4 +1,4 @@
-(defproject au.com.auspost/component-clinic "0.1.0-SNAPSHOT"
+(defproject au.com.auspost/component-clinic "SNAPSHOT"
 
   :description "Look after the health of your components at the component-clinic! "
 
@@ -11,9 +11,9 @@
                  [com.taoensso/timbre "3.1.6"]
                  ]
 
-  :plugins [[org.clojars.cvillecsteele/lein-git-version "1.0.1"]]
+  :plugins [[lein-version-spec "0.0.4"]]
 
-  :git-version-path "src/component_clinic"
+  :version-spec "~{:env/project_version}"
 
   :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost"
                                   :username "sordina"
