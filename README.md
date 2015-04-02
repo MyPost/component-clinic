@@ -19,9 +19,7 @@ Make sure they are having regular checkups at the component-clinic!
 
 ## Usage
 
-Leiningen:
-
-		:dependencies [[au.com.auspost/component-clinic "0.1.0-SNAPSHOT"]]
+Leiningen: See [Clojars.](https://clojars.org/au.com.auspost/component-clinic)
 
 In your code:
 
