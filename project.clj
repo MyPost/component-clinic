@@ -15,7 +15,7 @@
 
   :version-spec "~{:env/project_version}"
 
-  :repositories {"clojars-https" {:url "http://clojars.org/repo/"
+  :repositories {"clojars-https" {:url "http://clojars.org/repo"
                                   :username "sordina"
                                   :password :env
                                   :sign-releases false }}
