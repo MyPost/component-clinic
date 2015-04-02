@@ -1,7 +1,7 @@
 language: clojure
 lein: lein2
 after_success:
-  - PROJECT_VERSION="$(git describe --match 'v*.*' --abbrev=4 --dirty='**DIRTY**')" lein version-spec
+  - PROJECT_VERSION="$(git describe --match 'v*.*' --abbrev=4 | sed 's/v//')" lein version-spec
   - lein2 deploy clojars-https
 env:
   global:
