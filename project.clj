@@ -15,9 +15,9 @@
 
   :version-spec "~{:env/project_version}"
 
-  :repositories {"clojars-https" {:url "http://clojars.org/repo"
+  :repositories {"clojars-https" {:url "https://clojars.org/repo"
                                   :username "sordina"
                                   :password :env
-                                  :sign-releases false }}
+                                  :sign-releases false } }
 
   :profiles {:test {:dependencies [[com.stuartsierra/component "0.2.1"]]}})
