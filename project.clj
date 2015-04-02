@@ -15,7 +15,7 @@
 
   :version-spec "~{:env/project_version}"
 
-  :repositories {"clojars-https" {:url "https://clojars.org/au.com.auspost/component-clinic"
+  :repositories {"clojars-https" {:url "http://clojars.org/repo/"
                                   :username "sordina"
                                   :password :env
                                   :sign-releases false }}
