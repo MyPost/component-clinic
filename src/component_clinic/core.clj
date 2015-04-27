@@ -202,7 +202,7 @@
   (if (satisfies? diagnosable this)
     (let [well? (healthy? this)]
       (if well?
-        (timbre/debugf "No issues with %s" (class this))
+        (timbre/tracef "No issues with %s" (class this))
         (do (timbre/infof "Treating %s" (class this))
             (treat! this)
             (let [well-well? (healthy? this)]

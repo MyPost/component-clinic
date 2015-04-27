@@ -119,6 +119,24 @@ The default options are below:
 			:checkup-interval      [10 :seconds]
 		}
 
+## Logging
+
+Component-Clinic uses taoensso.timbre for logging.
+
+Various log-levels are used for different scenarios:
+
+* Error: Exceptions thrown by your health? or treat! calls during the clinic loop
+* Error: Component threw exception on admittance
+* Warn:  Your component recovered
+* Info:  Your component is aboiut to be treated
+* Info:  Your component can't be checked as it doesn't implement diagnosable
+* Info:  Admitting component
+* Info:  Discharging component
+* Trace: Your component is about to be checked
+* Trace: Your component has been checked and found healthy
+
+In general, an Info log-level will prevent you from missing any important messages.
+
 ## Crash Driven Development
 
 In complex systems, if initialization becomes recovery, then you can
