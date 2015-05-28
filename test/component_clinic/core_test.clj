@@ -31,8 +31,8 @@
 
 (defn swait [this]
   (Thread/sleep (apply get-time [5 :seconds]))
-  (component/stop this)
-  )
+  (prn this)
+  (component/stop this))
 
 (deftest cc-test
   (testing "Should run Component Clinic okay"

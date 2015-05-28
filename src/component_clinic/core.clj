@@ -120,6 +120,20 @@
     Truthy values indicate that they are well.
     "))
 
+(defn to-string [{:keys [attending] :as at}]
+  (cond (not (future? attending))     (str "<Attention " attending ">")
+        (future-cancelled? attending) "<Attention cancelled>"
+        :else                         "<Attention in-progress>"))
+
+(defrecord Attention [attending] Object    (toString [at] (to-string at)))
+
+(defmethod print-method Attention [at out] (.write out (to-string at)))
+
+(defmethod print-dup    Attention [at out] (.write out (to-string at)))
+
+(defn attention-cancel [{:keys [attending]}]
+  (future-cancel attending))
+
 ;; Implementation Details
 
 ;; Thanks StackOverflow!
@@ -242,7 +256,7 @@
        (timbre/infof "Attending patient [%s]" (class this))
        (if-not skip-initial-checkup? (initial-checkup! this))
        (assoc this ::attending
-              (every interval checkup! this)))))
+              (Attention. (every interval checkup! this))))))
 
 (defn discharge!
   "
@@ -253,5 +267,5 @@
   "
   [this]
   (timbre/infof "Discharging patient [%s]" (class this))
-  (future-cancel (::attending this))
+  (attention-cancel (::attending this))
   (dissoc this ::attending))
